@@ -1,0 +1,527 @@
+Program.Sub.ScreenSU.Start
+Gui.SS_Form1..Create
+Gui.SS_Form1..Caption("Project Status by Phase")
+Gui.SS_Form1..Size(5020,2440)
+Gui.SS_Form1..Position(0,0)
+Gui.SS_Form1..AlwaysOnTop(False)
+Gui.SS_Form1..FontName("Arial")
+Gui.SS_Form1..FontSize(8)
+Gui.SS_Form1..ForeColor(0)
+Gui.SS_Form1..Backcolor(-2147483633)
+Gui.SS_Form1..ControlBox(True)
+Gui.SS_Form1..MaxButton(False)
+Gui.SS_Form1..MinButton(False)
+Gui.SS_Form1..MousePointer(0)
+Gui.SS_Form1..Moveable(True)
+Gui.SS_Form1..Sizeable(False)
+Gui.SS_Form1..ShowInTaskBar(True)
+Gui.SS_Form1..TitleBar(True)
+Gui.SS_Form1..Event(unload,SS_Form1_Unload)
+Gui.SS_Form1.lbl_txtProject.Create(label)
+Gui.SS_Form1.lbl_txtProject.Caption("Project")
+Gui.SS_Form1.lbl_txtProject.Visible(True)
+Gui.SS_Form1.lbl_txtProject.Size(1800,200)
+Gui.SS_Form1.lbl_txtProject.Zorder(1)
+Gui.SS_Form1.lbl_txtProject.Position(100,135)
+Gui.SS_Form1.lbl_txtProject.Enabled(True)
+Gui.SS_Form1.lbl_txtProject.Alignment(0)
+Gui.SS_Form1.lbl_txtProject.FontName("Arial")
+Gui.SS_Form1.lbl_txtProject.FontSize(8)
+Gui.SS_Form1.lbl_txtProject.Backcolor(-2147483633)
+Gui.SS_Form1.lbl_txtProject.BackStyle(0)
+Gui.SS_Form1.lbl_txtProject.Tooltip("")
+Gui.SS_Form1.lbl_txtProject.ControlGroup(0)
+Gui.SS_Form1.txtProject.Create(textbox)
+Gui.SS_Form1.txtProject.Text("")
+Gui.SS_Form1.txtProject.Visible(True)
+Gui.SS_Form1.txtProject.Size(1800,330)
+Gui.SS_Form1.txtProject.Zorder(1)
+Gui.SS_Form1.txtProject.Position(100,335)
+Gui.SS_Form1.txtProject.Enabled(True)
+Gui.SS_Form1.txtProject.Alignment(0)
+Gui.SS_Form1.txtProject.FontName("Arial")
+Gui.SS_Form1.txtProject.FontSize(8)
+Gui.SS_Form1.txtProject.Backcolor(16777215)
+Gui.SS_Form1.txtProject.BorderStyle(1)
+Gui.SS_Form1.txtProject.TabStop(True)
+Gui.SS_Form1.txtProject.TabIndex(1)
+Gui.SS_Form1.txtProject.Tooltip("")
+Gui.SS_Form1.txtProject.ControlGroup(0)
+Gui.SS_Form1.txtProject.DefaultValue("")
+Gui.SS_Form1.cmd_txtProject.Create(button)
+Gui.SS_Form1.cmd_txtProject.Caption("^")
+Gui.SS_Form1.cmd_txtProject.Visible(True)
+Gui.SS_Form1.cmd_txtProject.Size(330,330)
+Gui.SS_Form1.cmd_txtProject.Zorder(0)
+Gui.SS_Form1.cmd_txtProject.Position(1985,335)
+Gui.SS_Form1.cmd_txtProject.Enabled(True)
+Gui.SS_Form1.cmd_txtProject.FontName("Arial")
+Gui.SS_Form1.cmd_txtProject.FontSize(8)
+Gui.SS_Form1.cmd_txtProject.TabStop(True)
+Gui.SS_Form1.cmd_txtProject.TabIndex(2)
+Gui.SS_Form1.cmd_txtProject.Tooltip("")
+Gui.SS_Form1.cmd_txtProject.ControlGroup(0)
+Gui.SS_Form1.cmd_txtProject.DefaultValue("")
+Gui.SS_Form1.cmd_txtProject.Event(click,cmd_txtProject_Click)
+Gui.SS_Form1.lbl_txtPhase.Create(label)
+Gui.SS_Form1.lbl_txtPhase.Caption("Phase")
+Gui.SS_Form1.lbl_txtPhase.Visible(True)
+Gui.SS_Form1.lbl_txtPhase.Size(1800,200)
+Gui.SS_Form1.lbl_txtPhase.Zorder(1)
+Gui.SS_Form1.lbl_txtPhase.Position(2455,135)
+Gui.SS_Form1.lbl_txtPhase.Enabled(True)
+Gui.SS_Form1.lbl_txtPhase.Alignment(0)
+Gui.SS_Form1.lbl_txtPhase.FontName("Arial")
+Gui.SS_Form1.lbl_txtPhase.FontSize(8)
+Gui.SS_Form1.lbl_txtPhase.Backcolor(-2147483633)
+Gui.SS_Form1.lbl_txtPhase.BackStyle(0)
+Gui.SS_Form1.lbl_txtPhase.Tooltip("")
+Gui.SS_Form1.lbl_txtPhase.ControlGroup(0)
+Gui.SS_Form1.txtPhase.Create(textbox)
+Gui.SS_Form1.txtPhase.Text("")
+Gui.SS_Form1.txtPhase.Visible(True)
+Gui.SS_Form1.txtPhase.Size(1800,330)
+Gui.SS_Form1.txtPhase.Zorder(1)
+Gui.SS_Form1.txtPhase.Position(2455,335)
+Gui.SS_Form1.txtPhase.Enabled(True)
+Gui.SS_Form1.txtPhase.Alignment(0)
+Gui.SS_Form1.txtPhase.FontName("Arial")
+Gui.SS_Form1.txtPhase.FontSize(8)
+Gui.SS_Form1.txtPhase.Backcolor(16777215)
+Gui.SS_Form1.txtPhase.BorderStyle(1)
+Gui.SS_Form1.txtPhase.TabStop(True)
+Gui.SS_Form1.txtPhase.TabIndex(3)
+Gui.SS_Form1.txtPhase.Tooltip("")
+Gui.SS_Form1.txtPhase.ControlGroup(0)
+Gui.SS_Form1.txtPhase.DefaultValue("")
+Gui.SS_Form1.cmd_txtPhase.Create(button)
+Gui.SS_Form1.cmd_txtPhase.Caption("^")
+Gui.SS_Form1.cmd_txtPhase.Visible(True)
+Gui.SS_Form1.cmd_txtPhase.Size(330,330)
+Gui.SS_Form1.cmd_txtPhase.Zorder(0)
+Gui.SS_Form1.cmd_txtPhase.Position(4340,335)
+Gui.SS_Form1.cmd_txtPhase.Enabled(True)
+Gui.SS_Form1.cmd_txtPhase.FontName("Arial")
+Gui.SS_Form1.cmd_txtPhase.FontSize(8)
+Gui.SS_Form1.cmd_txtPhase.TabStop(True)
+Gui.SS_Form1.cmd_txtPhase.TabIndex(4)
+Gui.SS_Form1.cmd_txtPhase.Tooltip("")
+Gui.SS_Form1.cmd_txtPhase.ControlGroup(0)
+Gui.SS_Form1.cmd_txtPhase.DefaultValue("")
+Gui.SS_Form1.cmd_txtPhase.Event(click,cmd_txtPhase_Click)
+Gui.SS_Form1.lbl_dtpCutoff.Create(label)
+Gui.SS_Form1.lbl_dtpCutoff.Caption("Cutoff Date")
+Gui.SS_Form1.lbl_dtpCutoff.Visible(True)
+Gui.SS_Form1.lbl_dtpCutoff.Size(1800,200)
+Gui.SS_Form1.lbl_dtpCutoff.Zorder(1)
+Gui.SS_Form1.lbl_dtpCutoff.Position(100,835)
+Gui.SS_Form1.lbl_dtpCutoff.Enabled(True)
+Gui.SS_Form1.lbl_dtpCutoff.Alignment(0)
+Gui.SS_Form1.lbl_dtpCutoff.FontName("Arial")
+Gui.SS_Form1.lbl_dtpCutoff.FontSize(8)
+Gui.SS_Form1.lbl_dtpCutoff.Backcolor(-2147483633)
+Gui.SS_Form1.lbl_dtpCutoff.BackStyle(0)
+Gui.SS_Form1.lbl_dtpCutoff.Tooltip("")
+Gui.SS_Form1.lbl_dtpCutoff.ControlGroup(0)
+Gui.SS_Form1.dtpCutoff.Create(datepicker)
+Gui.SS_Form1.dtpCutoff.Visible(True)
+Gui.SS_Form1.dtpCutoff.Size(1800,345)
+Gui.SS_Form1.dtpCutoff.Zorder(0)
+Gui.SS_Form1.dtpCutoff.Position(100,1035)
+Gui.SS_Form1.dtpCutoff.Enabled(True)
+Gui.SS_Form1.dtpCutoff.Checkbox(False)
+Gui.SS_Form1.dtpCutoff.TabStop(True)
+Gui.SS_Form1.dtpCutoff.TabIndex(5)
+Gui.SS_Form1.dtpCutoff.Tooltip("")
+Gui.SS_Form1.dtpCutoff.ControlGroup(0)
+Gui.SS_Form1.dtpCutoff.DefaultValue("")
+Gui.SS_Form1.cmdOk.Create(button)
+Gui.SS_Form1.cmdOk.Caption("Ok")
+Gui.SS_Form1.cmdOk.Visible(True)
+Gui.SS_Form1.cmdOk.Size(1000,360)
+Gui.SS_Form1.cmdOk.Zorder(0)
+Gui.SS_Form1.cmdOk.Position(100,1465)
+Gui.SS_Form1.cmdOk.Enabled(True)
+Gui.SS_Form1.cmdOk.FontName("Arial")
+Gui.SS_Form1.cmdOk.FontSize(8)
+Gui.SS_Form1.cmdOk.TabStop(True)
+Gui.SS_Form1.cmdOk.TabIndex(6)
+Gui.SS_Form1.cmdOk.Tooltip("")
+Gui.SS_Form1.cmdOk.ControlGroup(0)
+Gui.SS_Form1.cmdOk.DefaultValue("")
+Gui.SS_Form1.cmdOk.Event(click,cmdOk_Click)
+gui.SS_Form1.lbl_txtProject.LabelStretch(True)
+gui.SS_Form1.lbl_txtPhase.LabelStretch(True)
+gui.SS_Form1.lbl_dtpCutoff.LabelStretch(True)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.UDT.U_ProjPH.Define("ACTUAL_COST",Float,ACTUAL_COST)
+Variable.UDT.U_ProjPH.Define("BIRUNID",Long,BIRUNID)
+Variable.UDT.U_ProjPH.Define("COMMITTED_COST",Float,COMMITTED_COST)
+Variable.UDT.U_ProjPH.Define("DESCR",String,DESCR)
+Variable.UDT.U_ProjPH.Define("ORDER_IN_PROCESS_AMT",Float,ORDER_IN_PROCESS_AMT)
+Variable.UDT.U_ProjPH.Define("ORIG_EST",Float,ORIG_EST)
+Variable.UDT.U_ProjPH.Define("PHASE",String,PHASE)
+Variable.UDT.U_ProjPH.Define("PROJECT",String,PROJECT)
+Variable.UDT.U_ProjPH.Define("PROJECTED_COST",Float,PROJECTED_COST)
+Variable.UDT.U_ProjPH.Define("SALES_IN_PROCESS_TOT",Float,SALES_IN_PROCESS_TOT)
+Variable.UDT.U_ProjPH.Define("SALES_ORIG_TOT",Float,SALES_ORIG_TOT)
+Variable.UDT.U_ProjPH.Define("SALES_PROJ_TOT",Float,SALES_PROJ_TOT)
+Variable.UDT.U_ProjPH.Define("SUFFIX",String,SUFFIX)
+Variable.UDT.U_ProjPH.Define("TITLE",String,TITLE)
+Variable.UDT.U_ProjPH.Define("TO_BE_COMMITTED",Float,TO_BE_COMMITTED)
+Variable.UDT.U_ProjPH.Define("VARIANCE",Float,VARIANCE)
+Variable.UDT.U_ProjPH.Define("WO",String,WO)
+Variable.uGlobal.U_ProjPH.Declare("U_ProjPH")
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+Gui.SS_Form1..Show
+
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4091_Project_Phase_WORPT.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.SS_Form1_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("SS_Form1_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+F.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("SS_Form1_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4091_Project_Phase_WORPT.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.SS_Form1_Unload.End
+
+Program.Sub.cmd_txtProject_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmd_txtProject_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+V.Local.sSQL.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.sTitle.Declare(String)
+V.Local.sRet.Declare(String)
+
+
+F.Intrinsic.String.Split("Project Number*!*Description*!*Customer","*!*",V.Local.sTitle)
+F.Intrinsic.String.Split("1200*!*3500*!*900","*!*",V.Local.iWidth)
+
+'create browser for Project Master
+F.Intrinsic.UI.Browser("Project Master Browser","Con","SELECT PROJECT, DESCR, CUSTOMER FROM V_PROJECT_MASTER ORDER BY PROJECT",V.Local.sTitle,V.Local.iWidth,2000,8000,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+	'split return and set project to ret 0 and phase to ret 2
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form1.txtProject.Text(V.Local.sRet(0))
+F.Intrinsic.Control.Else
+	'browser was canceled so exit sub
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmd_txtProject_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4091_Project_Phase_WORPT.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmd_txtProject_Click.End
+
+Program.Sub.cmd_txtPhase_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmd_txtPhase_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.sSQL.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.sTitle.Declare(String)
+V.Local.sRet.Declare(String)
+
+'check to make sure there is a selection in Project.
+F.Intrinsic.Control.If(V.Screen.SS_Form1!txtProject.Text,<>,"")
+
+	F.Intrinsic.String.Split("Project Number*!*Phase*!*Description","*!*",V.Local.sTitle)
+	F.Intrinsic.String.Split("1200*!*900*!*3200","*!*",V.Local.iWidth)
+	
+	'create browser for Project Master
+	F.Intrinsic.String.Build("SELECT PROJECT, PHASE, DESCR FROM V_PROJECT_PHASE WHERE PROJECT = '{0}' ORDER BY PROJECT, PHASE ",V.Screen.SS_Form1!txtProject.Text.Trim,V.Local.sSQL)
+	F.Intrinsic.UI.Browser("Project Master Browser","Con",V.Local.sSQL,V.Local.sTitle,V.Local.iWidth,2000,8000,V.Local.sRet)
+	F.Intrinsic.Control.If(V.Local.sRet,<>,"***CANCEL***")
+		'split return and set project to ret 0 and phase to ret 2
+		F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+		Gui.SS_Form1.txtPhase.Text(V.Local.sRet(1))
+	F.Intrinsic.Control.Else
+		'browser was canceled so exit sub
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	
+'no project has been selected so notify them.
+F.Intrinsic.Control.Else
+	F.Intrinsic.UI.Msgbox("Please select a project.","Report Request Error")
+F.Intrinsic.Control.EndIf
+
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmd_txtPhase_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4091_Project_Phase_WORPT.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmd_txtPhase_Click.End
+
+Program.Sub.cmdOk_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdOk_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+V.Local.iBIRUNID.Declare(Long)
+V.Local.iLogID.Declare(Long)
+V.Local.iRptId.Declare(Long)
+V.Local.sSQL.Declare(String)
+V.Local.iUB.Declare(Long)
+
+
+
+V.Local.sPROJECT.Declare(String)
+V.Local.sPHASE.Declare(String)
+V.Local.SALES_ORIG_TOT.Declare(Float)
+V.Local.sTITLE.Declare(String)
+V.Local.Sales_Proj_Tot.Declare(String)
+V.Local.fvar1.Declare(Float)
+V.Local.fvar2.Declare(Float)
+V.Local.fBurden.Declare(Float)
+V.Local.dtSeq.Declare(Date)
+
+
+
+
+'F.Intrinsic.Debug.InvokeDebugger
+
+V.uGlobal.U_ProjPH.Redim(-1,-1)
+
+V.Local.dtSeq.Set(V.Screen.SS_Form1!dtpCutoff.Value)
+
+F.Intrinsic.String.Build("select Orig_sales from PROJECT_PHASE where project = '{0}' and phase = '{1}' ",V.Screen.SS_Form1!txtProject.Text.trim,V.Screen.SS_Form1!txtPhase.Text.trim,V.local.sSQL)
+F.ODBC.connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+
+F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,"=",True)
+	F.Intrinsic.UI.Msgbox("No records found")
+	F.ODBC.con!rst.Close
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.Else
+	V.Local.sPROJECT.set(V.Screen.SS_Form1!txtProject.Text.trim)
+	V.Local.sPHASE.set(V.Screen.SS_Form1!txtPhase.Text.trim)
+	V.Local.SALES_ORIG_TOT.Set(V.ODBC.Con!rst.FieldVal!Orig_sales)
+	F.ODBC.con!rst.Close
+
+	F.Intrinsic.String.Build("select descr from PROJECT_MASTER where project = '{0}' ",V.Screen.SS_Form1!txtProject.Text.trim,V.local.sSQL)
+	F.ODBC.connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+
+	F.Intrinsic.Control.If(V.ODBC.con!rst.EOF,"=",False)
+		V.Local.sTITLE.Set(V.ODBC.Con!rst.FieldValtrim!descr)
+	F.Intrinsic.Control.Endif
+	F.ODBC.con!rst.Close
+
+	F.Intrinsic.String.Build("select distinct wo,wo_suff from PROJECT_XREF where type = 'W'  and  project = '{0}' and phase = '{1}' ",V.Screen.SS_Form1!txtProject.Text.trim,V.Screen.SS_Form1!txtPhase.Text.trim,V.local.sSQL)
+	F.ODBC.connection!con.OpenLocalRecordsetRO("rst",V.Local.sSQL)
+		F.Intrinsic.Control.if(V.ODBC.con!rst.EOF,"=",False)
+
+			Function.Intrinsic.UI.InvokeWaitDialog("Printing Report. please wait ...")
+			F.Global.BI.GetRunID(V.Local.iBIRUNID)
+			F.Global.BI.GetIDFromName("GCG_4091_PRPHWO.RPT",V.Local.iRptId)
+			F.Global.BI.StartLogging(V.Local.iBIRUNID,V.Local.iRptId,0,"",V.Local.iLogID)
+
+			
+			F.Intrinsic.Control.DoUntil(V.ODBC.con!rst.EOF,"=",True)
+				Function.Intrinsic.Control.If(V.uGlobal.U_ProjPH.UBound,=,-1)
+					V.Local.iUB.Set(0)
+					V.uGlobal.U_ProjPH.Redim(0,0)
+				Function.Intrinsic.Control.Else
+					F.Intrinsic.Math.Add(V.uGlobal.U_ProjPH.UBound,1,V.Local.iUB)
+					V.uGlobal.U_ProjPH.RedimPreserve(0,V.Local.iUB)
+				Function.Intrinsic.Control.EndIf
+
+				V.uGlobal.U_ProjPH(v.Local.iUB)!PROJECT.Set(V.Local.sPROJECT)
+				V.uGlobal.U_ProjPH(v.Local.iUB)!PHASE.Set(V.Local.sPHASE)
+
+				V.uGlobal.U_ProjPH(v.Local.iUB)!SALES_ORIG_TOT.Set(V.Local.SALES_ORIG_TOT)
+				V.uGlobal.U_ProjPH(v.Local.iUB)!TITLE.Set(V.Local.sTITLE)
+
+				V.uGlobal.U_ProjPH(v.Local.iUB)!WO.Set(V.ODBC.Con!rst.FieldValtrim!wo)
+				V.uGlobal.U_ProjPH(v.Local.iUB)!Suffix.Set(V.ODBC.Con!rst.FieldValtrim!WO_Suff)
+
+
+				F.Intrinsic.String.Build("select (Qty_Order * AMT_PRICE_PER_UNIT) as 'SalesProj' from v_job_header where job = '{0}' and suffix = '{1}' ",V.ODBC.Con!rst.FieldValtrim!wo,V.ODBC.Con!rst.FieldValtrim!WO_Suff,V.local.sSQL)
+				F.ODBC.connection!con.OpenLocalRecordsetRO("rstwo",V.Local.sSQL)
+				F.Intrinsic.Control.If(V.ODBC.con!rstwo.EOF,"=",False)
+					V.Local.fBurden.Set(0)
+					V.Local.fvar1.Set(0)
+					V.Local.fvar2.Set(0)
+
+					'Sales_Proj_Tot = Sales_Proj_Tot + (JOB_HEADER.QUANTITY*JOB_HEADER.AMT_PRICE_PER_UNIT)
+					'Sales_In_Process_Tot = Sales_Proj_Tot
+					F.Intrinsic.Math.Add(V.Local.Sales_Proj_Tot,V.ODBC.Con!rstwo.FieldVal!SalesProj,V.Local.Sales_Proj_Tot)
+'F.Intrinsic.Debug.Stop
+					F.Intrinsic.String.Build("select User_5,User_6  from WO_USER_FLDS where job = '{0}' and suffix = '{1}' ",V.ODBC.Con!rst.FieldValtrim!wo,V.ODBC.Con!rst.FieldValtrim!WO_Suff,V.local.sSQL)
+					F.ODBC.connection!con.OpenLocalRecordsetRO("rst1",V.Local.sSQL)
+					F.Intrinsic.Control.If(V.ODBC.con!rst1.EOF,"=",False)
+						'User_5 = ORIG_EST
+						'USER_6 = ORDER_IN_PROCESS_AMT
+'F.Intrinsic.Debug.Stop
+
+						V.uGlobal.U_ProjPH(v.Local.iUB)!ORIG_EST.Set(V.ODBC.Con!rst1.FieldValFloat!User_5)
+						V.uGlobal.U_ProjPH(v.Local.iUB)!ORDER_IN_PROCESS_AMT.Set(V.ODBC.Con!rst1.FieldValFloat!User_6)
+					F.Intrinsic.Control.Endif
+					F.ODBC.con!rst1.Close
+
+					F.Intrinsic.String.Build("select Burden from JOB_OPERATIONS where job = '{0}' and suffix = '{1}' and SEQ = '000050' ",V.ODBC.Con!rst.FieldValtrim!wo,V.ODBC.Con!rst.FieldValtrim!WO_Suff,V.local.sSQL)
+					F.ODBC.connection!con.OpenLocalRecordsetRO("rst1",V.Local.sSQL)
+					F.Intrinsic.Control.If(V.ODBC.con!rst1.EOF,"=",False)
+						'PROJECTED_COST = JOB_OPERATIONS.BURDEN
+						'VARIANCE = (ORDER_IN_PROCESS_AMT - BURDEN)/(ORDER_IN_PROCESS_AMT*100)
+
+
+						V.Local.fBurden.Set(V.ODBC.Con!rst1.FieldValFloat!Burden)
+						V.uGlobal.U_ProjPH(v.Local.iUB)!PROJECTED_COST.Set(V.Local.fBurden)
+						F.Intrinsic.Math.Sub(V.uGlobal.U_ProjPH(v.Local.iUB)!ORDER_IN_PROCESS_AMT,V.Local.fBurden,V.Local.fvar1)
+						F.Intrinsic.Math.Mult(V.uGlobal.U_ProjPH(v.Local.iUB)!ORDER_IN_PROCESS_AMT,100,V.Local.fvar2)
+						F.Intrinsic.Math.Div(V.Local.fvar1,V.Local.fvar2,V.uGlobal.U_ProjPH(v.Local.iUB)!VARIANCE)
+
+					F.Intrinsic.Control.Endif
+					F.ODBC.con!rst1.Close
+
+				
+					F.Intrinsic.String.Build("select sum(JOB_DETAIL.AMOUNT_LABOR + JOB_DETAIL.AMT_OVERHEAD) as 'AMT',sum(AMT_COMMITTED) as 'AMT_COMMITTED' from JOB_DETAIL where job = '{0}' and suffix = '{1}' and LMO <> 'C' AND LMO <> 'Z' and EDITED_WO_DTL <> 'R' and Date_Sequence <= '{2}'",V.ODBC.Con!rst.FieldValtrim!wo,V.ODBC.Con!rst.FieldValtrim!WO_Suff,V.Local.dtSeq.pervasivedate,V.local.sSQL)
+					F.ODBC.connection!con.OpenLocalRecordsetRO("rst1",V.Local.sSQL)
+'					F.Intrinsic.Control.if(V.ODBC.con!rst1.EOF,"=",False)
+								'ACTUAL_COST = AMT
+								'COMMITTED_COST= JOB_DETAIL.AMT_COMMITTED
+						'TO_BE_COMMITTED = (JOB_OPERATIONS.BURDEN - ACTUAL_COST - COMMITTED_COST)
+			
+					F.Intrinsic.Control.If(V.ODBC.Con!rst1.FieldValIsNull!AMT,"=",False)
+F.Intrinsic.Debug.Stop
+						V.uGlobal.U_ProjPH(v.Local.iUB)!ACTUAL_COST.Set(V.ODBC.Con!rst1.FieldValFloat!AMT)
+						V.uGlobal.U_ProjPH(v.Local.iUB)!COMMITTED_COST.Set(V.ODBC.Con!rst1.FieldValFloat!AMT_COMMITTED)
+						F.Intrinsic.Math.Sub(V.Local.fBurden,V.ODBC.Con!rst1.FieldValFloat!AMT,V.ODBC.Con!rst1.FieldValFloat!AMT_COMMITTED,V.uGlobal.U_ProjPH(v.Local.iUB)!TO_BE_COMMITTED)
+					F.Intrinsic.Control.Endif
+					F.ODBC.con!rst1.Close
+
+				F.Intrinsic.Control.Endif
+				F.ODBC.con!rstwo.Close
+				
+				F.ODBC.Con!rst.MoveNext
+			F.Intrinsic.Control.loop
+
+			F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.U_ProjPH!BIRUNID,V.Local.iBIRUNID)
+			F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.U_ProjPH!SALES_IN_PROCESS_TOT,V.Local.Sales_Proj_Tot)
+			F.Intrinsic.Variable.UDTSetMemberValue(V.uGlobal.U_ProjPH!SALES_PROJ_TOT,V.Local.Sales_Proj_Tot)
+
+			Function.Intrinsic.Control.If(V.uGlobal.U_ProjPH.UBound,<>,-1)
+'				Function.Intrinsic.UI.InvokeWaitDialog("Printing Report. please wait ...")
+
+				F.ODBC.Connection!Con.OpenRecordsetRW("rstTable","GCG_4091_PRPHWO")
+				F.Intrinsic.Control.If(V.uGlobal.U_ProjPH.UBound,<>,-1)
+					F.Intrinsic.Variable.SaveUDTTORecordSet("Con","rstTable","V.uGlobal.U_ProjPH")
+				F.Intrinsic.Control.EndIf
+				F.ODBC.Con!rstTable.Close
+
+				Variable.Local.iRet.Declare(Long)
+
+				Function.Global.BI.RunReportPreProcessor(V.Local.iBIRUNID,V.Local.iLogID,"","","",-1,True,"",-1,"",-1,"","",V.Local.iRet)
+			
+				F.Global.BI.StopLogging(V.local.iLogID)
+				Function.Intrinsic.UI.CloseWaitDialog
+
+	'			deleteallfrombitablewhereterminalisthere
+'				F.Intrinsic.String.Build("DELETE FROM GCG_4091_PRPHWO WHERE BIRUNID = {0} ",V.Local.iBIRUNID,V.Local.sSQL)
+'				F.ODBC.Connection!Con.Execute(V.Local.sSQL)
+				F.Intrinsic.Control.CallSub(Ss_form1_unload)
+			F.Intrinsic.Control.else
+				F.Intrinsic.UI.Msgbox("No Record to Print")
+			F.Intrinsic.Control.Endif
+		F.Intrinsic.Control.else
+			F.Intrinsic.UI.Msgbox("No Wo found")
+		F.Intrinsic.Control.EndIf
+	F.ODBC.con!rst.Close
+F.Intrinsic.Control.Endif
+
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdOk_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_4091_Project_Phase_WORPT.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.UI.CloseWaitDialog
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdOk_Click.End
+
+Program.Sub.Comments.Start
+${$0$}$$}$Strider$}$2/29/2016 4:11:21 PM
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$This is a conversion from COBOL to GAB for XJB165.
+Project Phase Report of Work Orders
+Program.Sub.Comments.End
+Program.Sub.ScreenSS.Start
+SS_Form1{{CAPTION::Project Status by Phase
+SS_Form1.CTRL{{NAME::txtProject\\TYPE::2\\CAPTION::Project\\TABSTOP::1\\GROUP::1\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::txtPhase\\TYPE::2\\CAPTION::Phase\\TABSTOP::2\\GROUP::1\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::dtpCutoff\\TYPE::6\\CAPTION::Cutoff Date\\TABSTOP::3\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdOk\\TYPE::5\\CAPTION::Ok\\TABSTOP::4\\GROUP::-1\\BROWSER::0\\SIZE::1
+
+Program.Sub.ScreenSS.End
+
